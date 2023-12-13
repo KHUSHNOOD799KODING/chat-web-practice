@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(61, 61, 61),green,rgb(61, 61, 61));
+    
+}
+
+.top{
+    text-align: center;
+    color: blueviolet;
+    font-size: 3vw;
+    font-weight: bolder;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 10px;
+    border-radius: 5px;
+    
+    top: 0;
+   
+    letter-spacing: 3px;
+    /* border: 1px solid blue; */
+    z-index: -1;
+    text-shadow: 0px 0px 15px currentColor;
+}
+
+.container{
+    width: 75%;
+    height: 95vh;
+    border: 3px solid crimson;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10vh auto;
+    border-radius: 25px;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 3;
+    margin-bottom: 0vh;
+}
+
+.username{
+    color: blue;
+}
+
+
+.heading h1{
+    /* border: 1px solid crimson; */
+    color: crimson;
+    padding: 6px 10px;
+    background-color: black;
+    border-radius: 10px;
+    font-weight: bolder;
+    /* display: inline-block; */
+    margin: 2% 3%;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px currentColor;
+
+}
+
+
+hr{
+    color: crimson;
+    height: .4%;
+}
+
+
+.left{
+    float: left;
+    border: 1px solid blue;
+    border-radius: 6px;
+    clear: both;
+    color: blue;
+}
+
+.right{
+    float: right;
+    border: 1px solid green;
+    border-radius: 6px;
+    clear: both;
+    color: green;
+}
+
+.heading{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid pink;
+    margin-bottom: 2vh;
+}
+
+#send-container{
+
+    width: 75%;
+    height: auto;
+    margin: 5vh auto;
+    border: 2px solid blueviolet;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1vh 2vw;
+}
+
+#send-container input{
+    width: 70%;
+    font-size: 2vw;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 1vh;
+}
+
+.btn{
+    width: 15%;
+    font-size: 2.3vw;
+    color: green;
+    border: 2px solid green;
+    border-radius: 5% ;
+    border-radius: 10px;
+}
+
+
+.message{
+    margin: 0vh 3%;
+    color: white;
+    border: 1px solid green;
+    background-color: transparent;
+    padding: 1%;
+    max-width: 40%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+@media (max-width:800px) {
+
+    .top{
+        font-size: 8vw;
+        
+    }
+
+    .container{
+        width: 95%;
+        height: 90vh;
+        margin: 8vh auto;
+        margin-bottom: 0;
+
+    }
+
+    .message{
+        font-size: 16px;
+    }
+
+    #send-container{
+        width: 95%;
+        margin: 2vh auto;
+
+    }
+    
+    #send-container input{
+        font-size: 4vw;
+
+    }
+
+    .btn{
+        font-size: 5vw;
+        width: 22%;
+    }
+    
+}
